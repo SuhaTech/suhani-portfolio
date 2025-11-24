@@ -19,11 +19,7 @@ export default function About() {
             <p className="section-subtitle">Who Am I?</p>
             <h2 className="section-title mb-3">About Me</h2>
             <p className="about-text">
-              I am <b>Suhani Tomar</b>, a Computer Science student with strong knowledge in 
-              <b> C, Python, and Java</b>. I enjoy building software solutions including 
-              web and mobile applications, designing databases, and debugging systems. 
-              I am passionate about technology, eager to learn, and a collaborative 
-              team player with strong problem-solving skills.
+              I am <b>Suhani Tomar</b>, a Computer Science student with strong knowledge in <b>Python, R, and SQL</b> . I enjoy analyzing data, building machine learning models, and deriving actionable insights to solve complex problems. I have experience in <b>data preprocessing, statistical analysis, and predictive modeling</b> , and I am passionate about leveraging technology to drive informed decision-making. I am eager to learn, a collaborative team player, and possess strong problem-solving skills with a keen interest in data-driven solutions.
             </p>
 
             {/* Resume Button */}

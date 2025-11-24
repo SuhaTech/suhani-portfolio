@@ -55,18 +55,47 @@ export default function Portfolio() {
           <br></br>
           <div className="col-m d-4">
             <div className="portfolio-card">
-              <img src="/assets/imgs/weather-app.png" className="portfolio-card-img" alt="Weather App" />
+              <img src="/assets/imgs/soundclassification.png" className="portfolio-card-img" alt="Weather App" />
               <div className="portfolio-card-overlay">
                 <div className="portfolio-card-caption">
-                  <h4>Weather App</h4>
-                  <p>HTML, CSS, JAVASCRIPT </p>
-                  <a href="https://weather-app-eight-tau-78.vercel.app/" className="btn btn-sm btn-light m-1" target="_blank" rel="noreferrer">Demo</a>
-                  <a href="https://github.com/SuhaTech/weather-app" className="btn btn-sm btn-primary m-1" target="_blank" rel="noreferrer">GitHub</a>
+                  <h4>Urban Sound Classification</h4>
+                  <p> ML Model ,Streamlit </p>
+        
+                  <a href="https://github.com/SuhaTech/soundclassification" className="btn btn-sm btn-primary m-1" target="_blank" rel="noreferrer">GitHub</a>
                 </div>
               </div>
             </div>
           </div>
+          <br></br>
 
+          <br></br>
+          <div className="col-m d-4">
+            <div className="portfolio-card">
+              <img src="/assets/imgs/fakenews.png" className="portfolio-card-img" alt="Weather App" />
+              <div className="portfolio-card-overlay">
+                <div className="portfolio-card-caption">
+                  <h4>Fake News Detection</h4>
+                  <p>React Js, Flask Backend </p>
+                  <a href="https://fake-news-frontend-eta.vercel.app/" className="btn btn-sm btn-light m-1" target="_blank" rel="noreferrer">Demo</a>
+                  <a href="https://github.com/SuhaTech/fake-news-frontend" className="btn btn-sm btn-primary m-1" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br></br>
+          <div className="col-m d-4">
+            <div className="portfolio-card">
+              <img src="/assets/imgs/hr_analytics.png" className="portfolio-card-img" alt="Weather App" />
+              <div className="portfolio-card-overlay">
+                <div className="portfolio-card-caption">
+                  <h4>HR Analytics Dashboard</h4>
+                  <p>Power BI</p>
+                  <a href="/build/HR_Analytics_Dashboard.pbix" className="btn btn-sm btn-light m-1" target="_blank" rel="noreferrer">Demo</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
