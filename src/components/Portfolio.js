@@ -1,4 +1,51 @@
+import React from "react";
+
 const projects = [
+  {
+    title: "Inventory Management System", // 💡 Fixed: Naya project sabse aage add kar diya hai
+    image: "/assets/imgs/inventory-management.png",
+    description: "Comprehensive system to track stock levels, manage products, orders, and streamline warehouse operations.",
+    primaryLink: {
+      label: "Demo",
+      href: "https://inventory-management-nu-beige.vercel.app/",
+      variant: "light",
+    },
+    secondaryLink: {
+      label: "GitHub",
+      href: "https://github.com/SuhaTech/inventory-management", // Is URL ko apne sahi repo se badal lijiyega
+      variant: "primary",
+    },
+  },
+  {
+    title: "Aetheris Estate Portal",
+    image: "/assets/imgs/aetheris-estate.png", 
+    description: "Modern Real Estate web platform featuring interactive property search, filters, and glassmorphism UI.",
+    primaryLink: {
+      label: "Demo",
+      href: "https://aetheris-estate-portal.vercel.app/",
+      variant: "light",
+    },
+    secondaryLink: {
+      label: "GitHub",
+      href: "https://github.com/SuhaTech/aetheris-estate-portal",
+      variant: "primary",
+    },
+  },
+  {
+    title: "Video RAG Chatbot",
+    image: "/assets/imgs/video-rag-chatbot.png",
+    description: "AI-powered Video RAG chatbot using React, FastAPI, OpenAI, LangChain, and ChromaDB for video analysis and contextual Q&A.",
+    primaryLink: {
+      label: "Demo",
+      href: "https://vedio-ai-chatbot.vercel.app/",
+      variant: "light",
+    },
+    secondaryLink: {
+      label: "GitHub",
+      href: "https://github.com/SuhaTech/vedio-ai-chatbot",
+      variant: "primary",
+    },
+  },
   {
     title: "Plant Disease Detection",
     image: "/assets/imgs/plant-disease.png",
@@ -10,7 +57,7 @@ const projects = [
     },
     secondaryLink: {
       label: "GitHub",
-      href: "https://github.com/SuhaTech/PlantDiseaseDetection",
+      href: "https://github.com/SuhaTech/plant-disease-detection",
       variant: "primary",
     },
   },
@@ -57,6 +104,7 @@ const projects = [
       href: "https://github.com/SuhaTech/soundclassification",
       variant: "primary",
     },
+    secondaryLink: null,
   },
   {
     title: "Fake News Detection",
@@ -82,6 +130,7 @@ const projects = [
       href: "/build/HR_Analytics_Dashboard.pbix",
       variant: "light",
     },
+    secondaryLink: null,
   },
   {
     title: "Notes App",
@@ -126,19 +175,23 @@ export default function Portfolio() {
                     <h4>{project.title}</h4>
                     <p>{project.description}</p>
 
-                    <a
-                      href={project.primaryLink.href}
-                      className={`btn btn-sm btn-${project.primaryLink.variant} m-1`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {project.primaryLink.label}
-                    </a>
+                    {/* Primary Link rendering */}
+                    {project.primaryLink && (
+                      <a
+                        href={project.primaryLink.href}
+                        className={`btn btn-sm btn-${project.primaryLink.variant || "light"} m-1`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {project.primaryLink.label}
+                      </a>
+                    )}
 
+                    {/* Secondary Link rendering with safety check */}
                     {project.secondaryLink && (
                       <a
                         href={project.secondaryLink.href}
-                        className={`btn btn-sm btn-${project.secondaryLink.variant} m-1`}
+                        className={`btn btn-sm btn-${project.secondaryLink.variant || "primary"} m-1`}
                         target="_blank"
                         rel="noreferrer"
                       >
