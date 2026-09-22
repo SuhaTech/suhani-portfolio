@@ -16,6 +16,27 @@ const projects = [
       variant: "primary",
     },
   },
+  
+
+  {
+    title: "Grocify Clone",
+    image: "/assets/imgs/grocify.png",
+    description:
+      "Responsive grocery shopping website built with React, Tailwind CSS, animations, and modern UI components.",
+    primaryLink: {
+      label: "Demo",
+      href: "https://grocify-umber-omega.vercel.app/",
+      variant: "light",
+    },
+    secondaryLink: {
+      label: "GitHub",
+      href: "https://github.com/SuhaTech/react-essentials-assignment/tree/main/grocify",
+      variant: "primary",
+    },
+  },
+
+  
+  
   {
     title: "Aetheris Estate Portal",
     image: "/assets/imgs/aetheris-estate.png", 

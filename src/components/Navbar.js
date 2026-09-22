@@ -37,7 +37,7 @@ export default function Navbar() {
           <li>
             <a
               className="resume-btn"
-              href="/My_Resume.pdf"
+              href="/Suhani.pdf"
               target="_blank"
               rel="noreferrer"
             >

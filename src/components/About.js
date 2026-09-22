@@ -25,7 +25,7 @@ export default function About() {
             {/* Resume Button */}
             <a 
               className="btn btn-primary mt-3 px-4 py-2 rounded-pill shadow-sm" 
-              href="/Resume.pdf" 
+              href="/Suhani.pdf" 
               target="_blank" 
               rel="noreferrer"
             >
